@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2>JavaScript Object Contructurs</h2>
+	<p id="demo"></p>
+	<script>
+		// Constructors function for Person object
+		function person (first,last,age,eye){
+			this.firstName = first;
+			this.lastName = last;
+			this.age = age;
+			this.eyeColor = eye;
+		}
+		// Create 2 Person Objects
+		var myfather = new Person("John", "Doe", 50, "blue");
+		var myMother = new Person("Sally", "Rally", 48, "green");
+		// Add nationality to first object
+		myfather.nationality = "English";
+		// Display nationality
+		document.getElementById("demo").innerHTML =
+		"myf ather is " + myfather.nationality;
+	</script>
+
+</body>
+</html>
